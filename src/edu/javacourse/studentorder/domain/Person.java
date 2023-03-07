@@ -2,15 +2,22 @@ package edu.javacourse.studentorder.domain;
 
 import java.time.LocalDate;
 
-public class Person {
-    private String surName;
-    private String givenName;
+public abstract class Person {
+    protected String surName;
+    protected String givenName;
     private String patronymic;
     private LocalDate dateOfBirth;
 
     private Address address;
 
 
+    public String getAdultString() {
+        return surName + " " + givenName;
+    }
+
+    public String getPersonString() {
+        return surName + " " + givenName  ;
+    }
 
     public String getSurName() {
         return surName;
