@@ -56,7 +56,6 @@ public class StudentOrderValidator {
 
 
     public AnswerCityRegister checkCityRegister(StudentOrder so) {
-
         return cityRegisterVal.checkCityRegister(so);
     }
 
